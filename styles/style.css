@@ -1,0 +1,123 @@
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --Name-Status-Font-Size: 18px;
+}
+
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    background: var(--Very-dark-blue-main-BG);
+    align-items: center;
+    display: flex;  
+    height: 100vh;
+}
+
+.NFT-Card {
+    border-radius: 10px;
+    width: 74%;
+    margin: 0 auto;
+    background: var(--Very-dark-blue-card-BG);
+}
+
+.NFT-Card-Top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 22px;
+}
+
+.NFT-Card-Top img {
+    border-radius: 10px;
+    max-width: 85%;
+}
+
+.NFT-Card-Top img:hover {
+    filter: opacity(0.6) drop-shadow(0 0 0 var(--Cyan));
+}
+
+.NFT-View {
+    position: absolute;
+    opacity: 0;
+}
+
+.NFT-Card-Top img:hover~.NFT-View {
+    opacity: 1;
+}
+
+.NFT-Card-Middle {
+    padding: 10px 20px;
+}
+
+.NFT-Card-Middle-top p:nth-child(1) {
+    color: var(--White);
+}
+
+.NFT-Card-Middle-top p:nth-child(1):hover {
+    color: var(--Cyan)
+}
+
+.NFT-Card-Middle-top p:nth-child(2) {
+    color: var(--Soft-blue);
+    font-size: 13px;
+}
+
+.NFT-Card-Middle-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.NFT-Card-Middle-bottom div {
+    display: flex;
+}
+
+.NFT-Card-Middle-bottom > div:nth-child(1) span {
+    color: var(--Cyan);
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.NFT-Card-Middle-bottom > div:nth-child(2) span {
+    color: var(--Soft-blue);
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.NFT-Card-Bottom {
+    margin: 0 auto;
+    height: 60px;
+    width: 238px;
+    border-top: 1px solid var(--Very-dark-blue-line);
+    display: flex;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+.NFT-Card-Bottom img {
+    max-block-size: 50%;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+}
+
+.NFT-Card-Bottom-profile-datos {
+    margin-left: 10px;
+}
+
+.NFT-Card-Bottom-profile-datos span:nth-child(1) {
+    color: var(--Soft-blue);
+    font-size: 13px;
+}
+
+.NFT-Card-Bottom-profile-datos span:nth-child(2) {
+    color: var(--White);
+    font-size: 13px;
+}
+
+.NFT-Card-Bottom-profile-datos span:nth-child(2):hover {
+    color: var(--Cyan);
+}
